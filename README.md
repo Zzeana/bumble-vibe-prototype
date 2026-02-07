@@ -1,7 +1,7 @@
 # bumble-vibe-prototype
 ## Tool Selection & Justification
 
-**Tool:** Claude
+**Tool:** 
 Claude is what I selected for this project due to its strength in design, figma plugin, and because of it's recommendation in the assignment. This project prioritizes interaction design, system states, and two-sided user flows, which aligns well with Claude’s capabilities. The Impeccable framework will be incorporated as the prototype evolves to support design quality.
 
 ## Project Definition

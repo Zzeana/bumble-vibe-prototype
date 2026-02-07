@@ -2,7 +2,7 @@
 ## Tool Selection & Justification
 
 **Tool:** Claude
-Claude was selected for this project due to its strength in design, figma plugin, and because of it's recommendation in the assignment. This project prioritizes interaction design, system states, and two-sided user flows, which aligns well with Claude’s capabilities. The Impeccable framework will be incorporated as the prototype evolves to support design quality.
+Claude is what I selected for this project due to its strength in design, figma plugin, and because of it's recommendation in the assignment. This project prioritizes interaction design, system states, and two-sided user flows, which aligns well with Claude’s capabilities. The Impeccable framework will be incorporated as the prototype evolves to support design quality.
 
 ## Project Definition
 https://docs.google.com/document/d/1bgU5OoQh39YoqN8kAReQpXHXZ4TBtOllaT_AcmuBx_s/edit?usp=sharing

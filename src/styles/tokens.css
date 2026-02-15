@@ -1,0 +1,60 @@
+/**
+ * Sidequests design tokens
+ * Sourced from Figma variable definitions and Bumble design system
+ */
+
+:root {
+  /* Colors */
+  --color-text-primary: #000000;
+  --color-text-secondary: #4a4a4a;
+  --color-text-on-brand: #f5f5f5;
+  --color-icon-default: #1e1e1e;
+  --color-background: #ffffff;
+  --color-background-brand: #2c2c2c;
+  --color-accent-yellow: #ffc629;
+  --color-button-accent: #ffc629;
+  --color-checkmark: #000000;
+  --color-location-pin: #e8a87c;
+  --color-location-bg: #f5f0e6;
+
+  /* Typography - Circular (Bumble Sans) for headings and body */
+  --font-heading: "Circular", "Circular Std", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: "Circular", "Circular Std", -apple-system, BlinkMacSystemFont, sans-serif;
+
+
+  --text-size-title: 24px;
+  --text-size-headline: 22px;
+  --text-size-headline-lg: 32px;
+  --text-size-nav: 17px;
+  --text-size-subhead: 16px;
+  --text-size-body: 16px;
+  --text-size-body-small: 14px;
+  --text-size-button: 17px;
+
+  --text-weight-regular: 400;
+  --text-weight-semibold: 600;
+  --text-weight-bold: 700;
+
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.4;
+  --line-height-relaxed: 1.5;
+
+  /* Spacing (from Figma sds tokens) */
+  --space-100: 4px;
+  --space-200: 8px;
+  --space-300: 12px;
+  --space-400: 16px;
+  --space-500: 20px;
+  --space-600: 24px;
+  --space-700: 32px;
+  --space-800: 40px;
+
+  /* Layout */
+  --screen-max-width: 390px;
+  --size-button-height: 56px;
+  --size-illustration-location: 120px;
+  --border-radius-sm: 8px;
+  --border-radius-md: 12px;
+  --border-radius-lg: 24px;
+  --border-radius-full: 9999px;
+}

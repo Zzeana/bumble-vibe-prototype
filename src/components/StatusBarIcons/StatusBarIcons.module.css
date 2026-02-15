@@ -1,0 +1,18 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--color-icon-default);
+}
+
+.signal {
+  flex-shrink: 0;
+}
+
+.wifi {
+  flex-shrink: 0;
+}
+
+.battery {
+  flex-shrink: 0;
+}

@@ -1,0 +1,13 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--space-600) var(--space-400);
+}
+
+.image {
+  width: 100%;
+  max-width: var(--size-illustration-location);
+  height: auto;
+  object-fit: contain;
+}

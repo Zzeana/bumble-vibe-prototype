@@ -9,3 +9,16 @@ https://docs.google.com/document/d/1bgU5OoQh39YoqN8kAReQpXHXZ4TBtOllaT_AcmuBx_s/
 
 ## Version Control Strategy
 This project uses Git and GitHub for version control. Changes will be committed incrementally after a decent output to allow me to undo anything in the event of unexpected behavior introduced by Claude. Before major revisions or experimentation, I will make a commit to preserve the previous code.
+
+## Tool Selection Update
+
+This project was initially planned using Claude due to its strong design reasoning and recommendation in the assignment.
+
+However, I switched to Cursor because it provides:
+
+• Persistent project rules
+• GitHub integration
+• Strong support for iterative UI prototyping
+• Better alignment with MCP-style workflows
+
+Cursor is what I will now use as my primary tool for prototype implementation.

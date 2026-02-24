@@ -17,9 +17,9 @@
   --color-location-pin: #e8a87c;
   --color-location-bg: #f5f0e6;
 
-  /* Typography - Circular (Bumble Sans) for headings and body */
-  --font-heading: "Circular", "Circular Std", -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-body: "Circular", "Circular Std", -apple-system, BlinkMacSystemFont, sans-serif;
+  /* Typography - Bumble Sans for all text */
+  --font-heading: "Bumble Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: "Bumble Sans", -apple-system, BlinkMacSystemFont, sans-serif;
 
 
   --text-size-title: 24px;
@@ -50,11 +50,18 @@
   --space-800: 40px;
 
   /* Layout */
-  --screen-max-width: 390px;
+  --screen-width: 402px;
+  --screen-height: 874px;
+  --screen-max-width: 402px;
   --size-button-height: 56px;
   --size-illustration-location: 120px;
   --border-radius-sm: 8px;
   --border-radius-md: 12px;
   --border-radius-lg: 24px;
   --border-radius-full: 9999px;
+
+  /* Motion & interaction */
+  --color-accent: var(--color-accent-yellow);
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.25s ease;
 }

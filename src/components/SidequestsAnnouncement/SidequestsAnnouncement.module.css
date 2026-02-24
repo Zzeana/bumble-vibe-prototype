@@ -1,0 +1,245 @@
+/* Screen: fixed size 402×874 */
+.screen {
+  position: relative;
+  width: var(--screen-width);
+  height: var(--screen-height);
+  max-width: var(--screen-max-width);
+  margin: 0 auto;
+  background: #e0e0e0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Backdrop: fills space so background remains visible above the sheet */
+.backdrop {
+  flex: 1;
+  min-height: 4vh;
+}
+
+/* Bottom sheet pane: fixed, below status bar (59px), 32px rounded top */
+.sheetPane {
+  position: fixed;
+  left: 50%;
+  top: 59px;
+  bottom: 0;
+  width: var(--screen-width);
+  max-width: var(--screen-max-width);
+  height: calc(var(--screen-height) - 59px);
+  max-height: calc(var(--screen-height) - 59px);
+  display: flex;
+  flex-direction: column;
+  background: #f5f6f5;
+  border-radius: 32px 32px 0 0;
+  box-shadow: 0 15px 75px rgba(0, 0, 0, 0.18);
+  overflow: hidden;
+  touch-action: none;
+}
+
+/* Status bar: black with white time/icons (invert light asset) */
+.statusBarWrapper {
+  position: relative;
+  flex-shrink: 0;
+  background: #000;
+}
+
+.statusBar {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: top center;
+  filter: invert(1);
+}
+
+.dynamicIslandMask {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 126px;
+  height: 37px;
+  border-radius: 20px;
+  background: #000;
+  pointer-events: none;
+}
+
+/* Grabber strip: top of sheet, 32px rounded to match pane */
+.grabberStrip {
+  flex-shrink: 0;
+  background: #8e8e93;
+  padding: 12px 0 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 32px 32px 0 0;
+  cursor: grab;
+  user-select: none;
+}
+
+.grabberStrip:active {
+  cursor: grabbing;
+}
+
+.grabber {
+  width: 36px;
+  height: 5px;
+  background: #c7c7cc;
+  border-radius: 100px;
+}
+
+/* Hero: 286px, #f5e988, image at left 88px top 30px, 226×226 */
+.hero {
+  flex-shrink: 0;
+  height: 286px;
+  background: #f5e988;
+  position: relative;
+  overflow: hidden;
+}
+
+.heroImage {
+  position: absolute;
+  left: 88px;
+  top: 30px;
+  width: 226px;
+  height: 226px;
+  object-fit: contain;
+  object-position: center;
+}
+
+/* Sheet content area: scrollable body of modal */
+.sheet {
+  flex: 1;
+  min-height: 0;
+  padding: var(--space-600) var(--space-500) calc(var(--space-600) + env(safe-area-inset-bottom, 0px));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.content {
+  width: 100%;
+  max-width: 369px;
+}
+
+/* Headline: 48px, line-height 44px, -1px letter-spacing, #303131 */
+.headline {
+  margin: 0 0 6px;
+  font-family: var(--font-heading);
+  font-size: 48px;
+  font-weight: var(--text-weight-semibold);
+  line-height: 44px;
+  letter-spacing: -1px;
+  color: #303131;
+}
+
+/* Date: 14px, #83859a, 0.14px letter-spacing */
+.date {
+  margin: 0 0 26px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  color: #83859a;
+  letter-spacing: 0.14px;
+}
+
+/* Subhead: 18px Medium, #303131, -0.36px */
+.subhead {
+  margin: 0 0 8px;
+  font-family: var(--font-heading);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.22;
+  letter-spacing: -0.36px;
+  color: #303131;
+}
+
+/* Body: 16px Regular, -0.16px */
+.body {
+  margin: 0 0 16px;
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: var(--text-weight-regular);
+  line-height: 1.25;
+  letter-spacing: -0.16px;
+  color: var(--color-text-primary);
+}
+
+/* "You can now:" 14px, 0.42px */
+.sectionLabel {
+  margin: 0 0 12px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: var(--text-weight-regular);
+  line-height: 1;
+  letter-spacing: 0.42px;
+  color: var(--color-text-primary);
+}
+
+.list {
+  margin: 0 0 32px;
+  padding: 0;
+  list-style: none;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: var(--text-weight-regular);
+  line-height: 1.5;
+  letter-spacing: 0.42px;
+  color: var(--color-text-primary);
+}
+
+.listItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.listItem:last-child {
+  margin-bottom: 0;
+}
+
+.listIcon {
+  flex-shrink: 0;
+  width: 22px;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: 0.72px;
+}
+
+/* Button: 12px padding, 8px radius, 16px text (Figma) */
+.cta {
+  margin-bottom: 20px;
+}
+
+.ctaButton {
+  padding: 12px var(--space-300);
+  min-height: auto;
+  font-size: 16px;
+  font-weight: var(--text-weight-regular);
+  border-radius: var(--border-radius-sm);
+}
+
+/* Terms: 12px, centered */
+.terms {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-text-primary);
+  text-align: center;
+}
+
+.termsLink {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-skip-ink: none;
+  white-space: nowrap;
+}
+
+.termsLink:hover {
+  opacity: 0.8;
+}

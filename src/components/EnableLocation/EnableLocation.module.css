@@ -1,9 +1,9 @@
 .screen {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: var(--screen-width);
+  height: var(--screen-height);
   max-width: var(--screen-max-width);
-  min-height: 100vh;
   margin: 0 auto;
   background: var(--color-background);
 }

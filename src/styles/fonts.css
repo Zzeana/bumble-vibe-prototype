@@ -1,0 +1,35 @@
+/**
+ * Bumble Sans – loaded from src/assets/fonts
+ */
+
+@font-face {
+  font-family: "Bumble Sans";
+  src: url("../assets/fonts/BumbleSans-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bumble Sans";
+  src: url("../assets/fonts/BumbleSans-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bumble Sans";
+  src: url("../assets/fonts/BumbleSans-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bumble Sans";
+  src: url("../assets/fonts/BumbleSans-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}

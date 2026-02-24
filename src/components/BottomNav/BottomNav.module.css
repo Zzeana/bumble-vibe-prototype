@@ -1,0 +1,126 @@
+.bottomNav {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0;
+  padding: 8px 8px calc(8px + env(safe-area-inset-bottom, 0px));
+  margin: 0 8px;
+  min-height: 92px;
+  background: var(--color-background);
+}
+
+.navItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 8px 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  flex: 1;
+  min-width: 0;
+  max-width: 72px;
+  color: var(--color-text-primary);
+}
+
+.navItem:hover {
+  opacity: 0.85;
+}
+
+.navItem:active {
+  transform: scale(0.98);
+}
+
+.navItemInactive {
+  color: #949494;
+}
+
+.navItemInactive:hover {
+  color: #757575;
+}
+
+.navItemInactive .navIcon {
+  opacity: 1;
+  filter: brightness(0) saturate(100%) invert(0.55);
+}
+
+.chatsIconWrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+}
+
+.chatsIconWrap .navIcon {
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+}
+
+.chatsNotificationBadge {
+  position: absolute;
+  top: -4px;
+  right: -6px;
+  min-width: 16px;
+  height: 16px;
+  padding: 0 4px;
+  border-radius: 50%;
+  background: #e53935;
+  border: 2px solid var(--color-background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: var(--text-weight-semibold);
+  line-height: 1;
+  color: #fff;
+}
+
+.navIcon {
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+}
+
+.navIconSvg {
+  width: 25px;
+  height: 25px;
+  flex-shrink: 0;
+  display: block;
+}
+
+.navIconLogo {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  transform: scaleY(-1);
+}
+
+.navLabel {
+  font-family: var(--font-body);
+  font-size: 10px;
+  line-height: 16px;
+  letter-spacing: 0.3px;
+}
+
+.navItemProfile {
+  width: 40px;
+  height: 39px;
+  border-radius: 30px;
+  border: 2px solid #dadada;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.navItemProfileImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

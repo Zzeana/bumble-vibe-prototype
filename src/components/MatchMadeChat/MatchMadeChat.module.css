@@ -1,0 +1,319 @@
+.screen {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex: 1;
+  min-height: 0;
+  background: var(--color-background);
+  box-sizing: border-box;
+  animation: screenEnter var(--transition-normal) ease-out;
+}
+
+@keyframes screenEnter {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.statusBarWrapper {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.statusBar {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.dynamicIslandMask {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 126px;
+  height: 37px;
+  border-radius: 20px;
+  background: var(--color-background);
+  pointer-events: none;
+}
+
+.chatNav {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 6px 12px 8px;
+  min-height: 59px;
+}
+
+.backButton {
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-90deg);
+}
+
+.backIcon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.chatInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.contactName {
+  font-family: var(--font-heading);
+  font-size: 16px;
+  font-weight: var(--text-weight-semibold);
+  line-height: 18px;
+  letter-spacing: 0.3px;
+  color: var(--color-text-primary);
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: var(--text-weight-semibold);
+  line-height: 15px;
+  color: #b5b5b5;
+}
+
+.statusDot {
+  font-size: 16px;
+  line-height: 16px;
+  color: #b5b5b5;
+}
+
+.moreButton {
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-89deg);
+}
+
+.moreIcon {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+.main {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  padding: 0 16px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heroImageWrap {
+  width: 124px;
+  height: 177px;
+  border-radius: 20px;
+  overflow: hidden;
+  flex-shrink: 0;
+  margin-top: 8px;
+}
+
+.heroImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.historyNote {
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.3px;
+  color: #838383;
+  text-align: center;
+  margin: 24px 0 0;
+  max-width: 302px;
+}
+
+.messageRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  width: 100%;
+  max-width: 358px;
+  margin-top: 30px;
+  align-self: flex-start;
+}
+
+.messageAvatar {
+  width: 39px;
+  height: 40px;
+  border-radius: 20px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.messageAvatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.messageMeta {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.messageSender {
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: var(--text-weight-regular);
+  line-height: 20px;
+  letter-spacing: 0.3px;
+  color: var(--color-text-primary);
+}
+
+.messageText {
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: var(--text-weight-regular);
+  line-height: 20px;
+  letter-spacing: 0.3px;
+  color: var(--color-text-primary);
+}
+
+.messageTime {
+  font-family: var(--font-body);
+  font-size: 10px;
+  line-height: 20px;
+  letter-spacing: 0.3px;
+  color: #838383;
+  margin-left: auto;
+  flex-shrink: 0;
+}
+
+.sidequestButton {
+  align-self: center;
+  margin-top: 24px;
+  height: 40px;
+  padding: 0 24px;
+  border-radius: 20px;
+  border: none;
+  background: #e4e4e4;
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: var(--text-weight-regular);
+  line-height: 16px;
+  letter-spacing: 0.3px;
+  color: var(--color-text-primary);
+  cursor: pointer;
+}
+
+.sidequestButton:hover {
+  background: #d8d8d8;
+}
+
+.sidequestButton:active {
+  transform: scale(0.98);
+}
+
+.inputBar {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 12px 18px;
+  padding-bottom: calc(12px + env(safe-area-inset-bottom, 0px));
+  background: var(--color-background);
+}
+
+.addButton {
+  width: 28px;
+  height: 26px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.addIcon {
+  width: 28px;
+  height: 26px;
+  object-fit: contain;
+}
+
+.inputWrap {
+  flex: 1;
+  min-width: 0;
+  height: 39px;
+  background: #f9f9f9;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px 0 20px;
+  position: relative;
+}
+
+.inputPlaceholder {
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0.3px;
+  color: #838383;
+  pointer-events: none;
+}
+
+.inputTrailingIcon {
+  width: 22px;
+  height: 23px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.gifButton {
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.gifIcon {
+  width: 106px;
+  height: 26px;
+  object-fit: contain;
+}

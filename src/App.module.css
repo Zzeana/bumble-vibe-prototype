@@ -1,0 +1,17 @@
+.appLayout {
+  display: flex;
+  flex-direction: column;
+  width: var(--screen-width);
+  height: var(--screen-height);
+  max-width: var(--screen-max-width);
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.screenSlot {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}

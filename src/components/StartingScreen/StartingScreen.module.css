@@ -1,0 +1,66 @@
+.screen {
+  display: flex;
+  flex-direction: column;
+  width: var(--screen-width);
+  height: var(--screen-height);
+  max-width: var(--screen-max-width);
+  margin: 0 auto;
+  background: var(--color-background);
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.statusBarWrapper {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.statusBar {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.dynamicIslandMask {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 126px;
+  height: 37px;
+  border-radius: 20px;
+  background: var(--color-background);
+  pointer-events: none;
+}
+
+.logoWrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--space-500);
+}
+
+.logo {
+  width: 118px;
+  height: 118px;
+  object-fit: contain;
+  transform: scaleY(-1);
+}
+
+.homeIndicator {
+  flex-shrink: 0;
+  width: 144px;
+  height: 5px;
+  margin: 0 auto;
+  margin-bottom: calc(env(safe-area-inset-bottom, 0px) + var(--space-200));
+  background: var(--color-text-primary);
+  border-radius: 20px;
+}
